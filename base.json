@@ -10,8 +10,5 @@
     "docker:enableMajor",
     ":masterIssue",
     "group:linters"
-  ],
-  "docker": {
-    "pinDigests": true
-  }
+  ]
 }
