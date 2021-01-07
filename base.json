@@ -10,5 +10,16 @@
     "docker:enableMajor",
     ":masterIssue",
     "group:linters"
+  ],
+  "docker": {
+    "pinDigests": true
+  },
+  "packageRules": [
+    {
+      "description": "Disable digest pinning for Drone CI",
+      "managers": ["droneci"],
+      "updateTypes": ["pin", "digest"],
+      "enabled": false
+    }
   ]
 }
