@@ -7,7 +7,7 @@
       "description": "Automerge digest updates (usually security patches)",
       "datasources": ["docker"],
       "packagePatterns": [
-        "^(alpine|node)",
+        "^(alpine|node|debian)",
         "^owncloudops/nginx"
       ],
       "updateTypes": ["pin", "digest"],
