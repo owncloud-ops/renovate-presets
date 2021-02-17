@@ -24,7 +24,7 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^ansible/(group_vars|services)/.*?$"],
+      "fileMatch": ["^ansible/(group_vars|host_vars)/.*?$"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\\n(?<roleName>\\S+?)_version: \"?(?<currentValue>.*?)\"?\\s"
       ]
