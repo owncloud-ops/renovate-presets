@@ -4,21 +4,24 @@
   "extends": ["github>owncloud-ops/renovate-presets:base"],
   "packageRules": [
     {
-      "packagePatterns": ["minio"],
+      "matchPackagePatterns": ["minio"],
       "versioning": "regex:^(RELEASE\\.)?(?<major>\\d{4})-(?<minor>\\d{2})-(?<patch>\\d{2})T\\S*?Z$",
       "extractVersion": "^RELEASE\\.(?<version>.*)$"
     },
     {
-      "packagePatterns": ["restic/restic","creativeprojects/resticprofile"],
+      "matchPackagePatterns": [
+        "restic/restic",
+        "creativeprojects/resticprofile"
+      ],
       "groupName": "Restic stack"
     },
     {
-      "packagePatterns": ["hashicorp/terraform"],
+      "matchPackagePatterns": ["hashicorp/terraform"],
       "separateMinorPatch": true
     },
     {
-      "packagePatterns": ["hashicorp/terraform"],
-      "updateTypes": ["patch"],
+      "matchPackagePatterns": ["hashicorp/terraform"],
+      "matchUpdateTypes": ["patch"],
       "enabled": false
     }
   ],

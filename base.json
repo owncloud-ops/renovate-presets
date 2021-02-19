@@ -17,8 +17,8 @@
   "packageRules": [
     {
       "description": "Disable digest pinning for Drone CI",
-      "managers": ["droneci"],
-      "updateTypes": ["pin", "digest"],
+      "matchManagers": ["droneci"],
+      "matchUpdateTypes": ["pin", "digest"],
       "enabled": false
     }
   ]
