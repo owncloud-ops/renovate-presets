@@ -15,6 +15,12 @@
       "matchManagers": ["docker-compose"],
       "matchUpdateTypes": ["pin", "digest"],
       "enabled": false
+    },
+    {
+      "description": "Disable digest pinning for Drone CI",
+      "matchManagers": ["droneci"],
+      "matchUpdateTypes": ["pin", "digest"],
+      "enabled": false
     }
   ],
   "regexManagers": [

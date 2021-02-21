@@ -4,7 +4,6 @@
   "extends": [
     "config:base",
     ":dependencyDashboard",
-    ":rebaseStalePrs",
     ":semanticCommits",
     ":semanticCommitScope(deps)",
     "docker:enableMajor",
@@ -13,13 +12,5 @@
   ],
   "docker": {
     "pinDigests": true
-  },
-  "packageRules": [
-    {
-      "description": "Disable digest pinning for Drone CI",
-      "matchManagers": ["droneci"],
-      "matchUpdateTypes": ["pin", "digest"],
-      "enabled": false
-    }
-  ]
+  }
 }
