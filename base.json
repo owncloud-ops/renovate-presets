@@ -13,6 +13,13 @@
   "docker": {
     "pinDigests": true
   },
+  "packageRules": [
+    {
+      "description": "Disable digest pinning for Drone CI",
+      "matchManagers": ["droneci"],
+      "pinDigests": false
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": ["Makefile"],

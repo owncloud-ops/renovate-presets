@@ -11,8 +11,8 @@
       "automerge": true
     },
     {
-      "description": "Disable digest pinning Compose and Drone",
-      "matchManagers": ["docker-compose", "droneci"],
+      "description": "Disable digest pinning for Docker Compose",
+      "matchManagers": ["docker-compose"],
       "pinDigests": false
     }
   ],
