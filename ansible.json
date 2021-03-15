@@ -23,6 +23,12 @@
       "matchPackagePatterns": ["hashicorp/terraform"],
       "matchUpdateTypes": ["patch"],
       "enabled": false
+    },
+    {
+      "matchDatasources": ["terraform-provider"],
+      "matchPackagePatterns": ["cloudflare"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
     }
   ],
   "regexManagers": [
