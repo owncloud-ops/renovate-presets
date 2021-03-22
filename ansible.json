@@ -9,6 +9,10 @@
       "extractVersion": "^RELEASE\\.(?<version>.*)$"
     },
     {
+      "matchPackagePatterns": ["jitsi/.*"],
+      "versioning": "regex:^(?<compatibility>.*)?(?<major>\\d{4})-(?<minor>\\d+)$"
+    },
+    {
       "matchPackagePatterns": [
         "restic/restic",
         "creativeprojects/resticprofile"
