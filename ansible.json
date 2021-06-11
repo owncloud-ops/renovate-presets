@@ -4,6 +4,10 @@
   "extends": ["github>owncloud-ops/renovate-presets:base"],
   "packageRules": [
     {
+      "matchManagers": ["regex"],
+      "extractVersion": "^v?(?<version>.*)$"
+    },
+    {
       "matchPackagePatterns": ["minio"],
       "versioning": "regex:^(RELEASE\\.)?(?<major>\\d{4})-(?<minor>\\d{2})-(?<patch>\\d{2})T\\S*?Z$",
       "extractVersion": "^RELEASE\\.(?<version>.*)$"
@@ -33,10 +37,6 @@
       "matchPackagePatterns": ["cloudflare"],
       "matchUpdateTypes": ["patch"],
       "automerge": true
-    },
-    {
-      "matchManagers": ["regex"],
-      "extractVersion": "^v?(?<version>.*)$"
     }
   ],
   "regexManagers": [
