@@ -7,7 +7,7 @@
       "description": "Automerge digest updates (usually security patches)",
       "matchDatasources": ["docker"],
       "matchPackagePatterns": [
-        "^((amd64|arm32v7|arm64v8)/)?(alpine|node|debian|owncloud)",
+        "^((amd64|arm32v7|arm64v8)/)?(alpine|node|debian|ubuntu|owncloud)",
         "^owncloudops/nginx"
       ],
       "matchUpdateTypes": ["pin", "digest"],
