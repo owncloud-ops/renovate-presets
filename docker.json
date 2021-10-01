@@ -16,7 +16,8 @@
       "matchDatasources": ["docker"],
       "matchPackagePatterns": [
         "^((amd64|arm32v7|arm64v8)/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch)",
-        "^owncloudops/nginx"
+        "^owncloudops/nginx",
+        "^onlyoffice/documentserver"
       ],
       "matchUpdateTypes": ["pin", "digest"],
       "automerge": true
