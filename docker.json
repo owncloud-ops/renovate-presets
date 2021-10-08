@@ -17,7 +17,8 @@
       "matchPackagePatterns": [
         "^((amd64|arm32v7|arm64v8)/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch)",
         "^owncloudops/nginx",
-        "^onlyoffice/documentserver"
+        "^onlyoffice/documentserver",
+        "^rabbitmq/.*-alpine"
       ],
       "matchUpdateTypes": ["pin", "digest"],
       "automerge": true
