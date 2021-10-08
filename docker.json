@@ -15,10 +15,9 @@
       "groupName": "docker digests",
       "matchDatasources": ["docker"],
       "matchPackagePatterns": [
-        "^((amd64|arm32v7|arm64v8)/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch)",
+        "^((amd64|arm32v7|arm64v8)/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch|rabbitmq)",
         "^owncloudops/nginx",
-        "^onlyoffice/documentserver",
-        "^rabbitmq/.*-alpine"
+        "^onlyoffice/documentserver"
       ],
       "matchUpdateTypes": ["pin", "digest"],
       "automerge": true
