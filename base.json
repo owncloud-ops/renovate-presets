@@ -15,6 +15,13 @@
   },
   "packageRules": [
     {
+      "description": "Automerge dev dependencies",
+      "groupName": "devDependencies (non-major)",
+      "matchDepTypes": ["devDependencies", "dev-dependencies"],
+      "matchUpdateTypes": ["pin", "digest", "patch", "minor"],
+      "automerge": true
+    },
+    {
       "description": "Disable digest pinning for Drone CI",
       "matchManagers": ["droneci"],
       "pinDigests": false
