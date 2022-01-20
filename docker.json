@@ -26,6 +26,13 @@
       "description": "Disable digest pinning for Docker Compose",
       "matchManagers": ["docker-compose"],
       "pinDigests": false
+    },
+    {
+      "description": "LTS-only Node updates",
+      "separateMultipleMajor": true,
+      "matchDatasources": ["docker"],
+      "matchPackagePatterns": ["^((amd64|arm32v7|arm64v8)/)?node"],
+      "allowedVersions": "/^\\d*[02468](-.*)?$/"
     }
   ],
   "regexManagers": [
