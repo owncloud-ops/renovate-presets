@@ -17,7 +17,8 @@
       "matchPackagePatterns": [
         "^((amd64|arm32v7|arm64v8)/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch|rabbitmq)",
         "^owncloudops/nginx",
-        "^onlyoffice/documentserver"
+        "^onlyoffice/documentserver",
+        "^quay.io/keycloak/keycloak"
       ],
       "matchUpdateTypes": ["pin", "digest"],
       "automerge": true
