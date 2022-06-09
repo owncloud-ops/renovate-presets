@@ -18,7 +18,8 @@
         "^((amd64|arm32v7|arm64v8)/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch|rabbitmq|golang|mariadb|redis)",
         "^owncloudops/nginx",
         "^onlyoffice/documentserver",
-        "^quay.io/keycloak/keycloak"
+        "^quay.io/keycloak/keycloak",
+        "^registry.access.redhat.com/ubi8"
       ],
       "matchUpdateTypes": ["pin", "digest"],
       "automerge": true
