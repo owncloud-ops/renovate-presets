@@ -21,7 +21,7 @@
         "^quay.io/keycloak/keycloak",
         "^registry.access.redhat.com/ubi8"
       ],
-      "matchUpdateTypes": ["pin", "digest"],
+      "matchUpdateTypes": ["pin", "digest", "pinDigest"],
       "automerge": true
     },
     {
