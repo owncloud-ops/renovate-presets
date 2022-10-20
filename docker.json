@@ -19,7 +19,8 @@
         "^owncloudops/nginx",
         "^onlyoffice/documentserver",
         "^quay.io/keycloak/keycloak",
-        "^registry.access.redhat.com/ubi8"
+        "^registry.access.redhat.com/ubi8",
+        "^cs3org/wopiserver"
       ],
       "matchUpdateTypes": ["pin", "digest", "pinDigest"],
       "automerge": true
