@@ -5,6 +5,7 @@
   "packageRules": [
     {
       "matchManagers": ["regex"],
+      "matchDatasources": ["github-releases", "git-tags"],
       "extractVersion": "^v?(?<version>.*)$"
     },
     {
