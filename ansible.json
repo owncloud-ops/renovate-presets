@@ -2,6 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": ["Preset for use with ansible repositories"],
   "extends": ["github>owncloud-ops/renovate-presets:base"],
+  "ansible": {
+    "fileMatch": ["^ansible/(group_vars|host_vars)/.*?$"]
+  },
   "packageRules": [
     {
       "matchManagers": ["regex"],
