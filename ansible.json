@@ -2,9 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": ["Preset for use with ansible repositories"],
   "extends": ["github>owncloud-ops/renovate-presets:base"],
-  "ansible": {
-    "fileMatch": ["^ansible/(group_vars|host_vars)/.*?$"]
-  },
   "packageRules": [
     {
       "matchManagers": ["regex"],
@@ -48,6 +45,13 @@
       "matchStrings": [
         "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\\n(?<roleName>\\S+?)_version: \"?(?<currentValue>.*?)\"?\\s"
       ]
+    },
+    {
+      "fileMatch": ["^ansible/(group_vars|host_vars)/.*?$"],
+      "matchStrings": [
+        "\\s+(imageName):\\s+\"?'?(?<depName>[^:\\s]+):(?<currentValue>[^\"'@]+?)(@(?<currentDigest>sha256:[a-f0-9]+))?\"?'?\\s"
+      ],
+      "datasourceTemplate": "docker"
     },
     {
       "fileMatch": ["^terraform/.+.tf$", "^.drone.yml$"],
