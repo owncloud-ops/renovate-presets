@@ -21,7 +21,7 @@
         "restic/restic",
         "creativeprojects/resticprofile"
       ],
-      "groupName": "Restic stack"
+      "groupName": "restic stack"
     },
     {
       "matchPackagePatterns": ["hashicorp/terraform"],
