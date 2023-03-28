@@ -10,8 +10,7 @@
     },
     {
       "matchPackagePatterns": ["minio"],
-      "versioning": "regex:^(RELEASE\\.)?(?<major>\\d{4})-(?<minor>\\d{2})-(?<patch>\\d{2})T\\S*?Z$",
-      "extractVersion": "^RELEASE\\.(?<version>.*)$"
+      "versioning": "regex:^(?<compatibility>RELEASE\\.)?(?<major>\\d{4})-(?<minor>\\d{2})-(?<patch>\\d{2})T\\S*?Z$"
     },
     {
       "matchPackagePatterns": ["jitsi/.*"],
