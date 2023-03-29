@@ -9,11 +9,11 @@
       "extractVersion": "^v?(?<version>.*)$"
     },
     {
-      "matchPackagePatterns": ["minio"],
+      "matchPackagePatterns": ["^(.+/)?minio/minio$"],
       "versioning": "regex:^(?<compatibility>RELEASE\\.)?(?<major>\\d{4})-(?<minor>\\d{2})-(?<patch>\\d{2})T\\S*?Z$"
     },
     {
-      "matchPackagePatterns": ["jitsi/.*"],
+      "matchPackagePatterns": ["^(.+/)?jitsi/.+$"],
       "versioning": "regex:^(?<compatibility>.*)?(?<major>\\d{4})-(?<minor>\\d+)$"
     },
     {
@@ -24,17 +24,17 @@
       "groupName": "restic stack"
     },
     {
-      "matchPackagePatterns": ["hashicorp/terraform"],
+      "matchPackagePatterns": ["^hashicorp/terraform$"],
       "separateMinorPatch": true
     },
     {
-      "matchPackagePatterns": ["hashicorp/terraform"],
+      "matchPackagePatterns": ["^hashicorp/terraform$"],
       "matchUpdateTypes": ["patch"],
       "enabled": false
     },
     {
       "matchDatasources": ["terraform-provider"],
-      "matchPackagePatterns": ["cloudflare"],
+      "matchPackagePatterns": ["^cloudflare$"],
       "matchUpdateTypes": ["patch"],
       "automerge": true
     }
