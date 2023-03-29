@@ -22,7 +22,7 @@
       "description": "Schedule high frequency packages",
       "groupName": "golang highFreq non-major",
       "matchDatasources": ["go"],
-      "matchPackagePatterns": ["urfave/cli"],
+      "matchPackagePatterns": ["^urfave/cli$"],
       "matchUpdateTypes": ["pin", "digest", "patch", "minor"],
       "extends": ["schedule:weekly"]
     }

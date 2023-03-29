@@ -15,13 +15,13 @@
       "groupName": "docker digests",
       "matchDatasources": ["docker"],
       "matchPackagePatterns": [
-        "^((amd64|arm64v8)/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch|rabbitmq|golang|mariadb|redis|python)",
-        "^owncloudops/nginx",
-        "^onlyoffice/documentserver",
-        "^quay.io/keycloak/keycloak",
-        "^registry.access.redhat.com/ubi(8|9)",
-        "^cs3org/wopiserver",
-        "^opensearchproject/opensearch"
+        "^(.+/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch|rabbitmq|golang|mariadb|redis|python)$",
+        "^(.+/)?owncloudops/nginx$",
+        "^(.+/)?onlyoffice/documentserver$",
+        "^(.+/)?/keycloak/keycloak$",
+        "^(.+/)?/ubi(8|9)$",
+        "^(.+/)?cs3org/wopiserver$",
+        "^(.+/)?opensearchproject/opensearch$"
       ],
       "matchUpdateTypes": ["pin", "digest", "pinDigest"],
       "automerge": true
@@ -35,7 +35,7 @@
       "description": "LTS-only Node updates",
       "separateMultipleMajor": true,
       "matchDatasources": ["docker"],
-      "matchPackagePatterns": ["^((amd64|arm64v8)/)?node"],
+      "matchPackagePatterns": ["^(.+/)?node$"],
       "allowedVersions": "/^\\d*[02468](-.*)?$/"
     }
   ],
