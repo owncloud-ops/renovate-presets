@@ -15,7 +15,8 @@
       "groupName": "docker digests",
       "matchDatasources": ["docker"],
       "matchPackagePatterns": [
-        "^(.+/)?(alpine|node|debian|ubuntu|owncloud|elasticsearch|rabbitmq|golang|mariadb|redis|python)$",
+        "^(.+/)?(alpine|node|debian|ubuntu|elasticsearch|rabbitmq|golang|mariadb|redis|python)$",
+        "^(.+/)?owncloud/.+$",
         "^(.+/)?owncloudops/nginx$",
         "^(.+/)?onlyoffice/documentserver$",
         "^(.+/)?/keycloak/keycloak$",
