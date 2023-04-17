@@ -20,7 +20,7 @@
         "^(.+/)?owncloudops/nginx$",
         "^(.+/)?onlyoffice/documentserver$",
         "^(.+/)?/keycloak/keycloak$",
-        "^(.+/)?/ubi(8|9)/ubi-minimal$",
+        "^(.+/)?ubi(8|9)/ubi-minimal$",
         "^(.+/)?cs3org/wopiserver$",
         "^(.+/)?opensearchproject/opensearch$"
       ],
