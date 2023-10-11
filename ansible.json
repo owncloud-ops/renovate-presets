@@ -64,14 +64,6 @@
       ],
       "depNameTemplate": "hashicorp/terraform",
       "datasourceTemplate": "github-releases"
-    },
-    {
-      "customType": "regex",
-      "fileMatch": ["^terraform/.+.tf$"],
-      "matchStrings": [
-        "source =\\s+\"?'?.+::(?<depName>[^?&\\s]+).git.+ref=(?<currentValue>[^\"'&?s]+).*\"?'?"
-      ],
-      "datasourceTemplate": "git-tags"
     }
   ]
 }
