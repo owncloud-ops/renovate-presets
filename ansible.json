@@ -39,14 +39,16 @@
       "automerge": true
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": ["^ansible/(group_vars|host_vars)/.*?$"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\\n(?<roleName>\\S+?)_version: \"?(?<currentValue>.*?)\"?\\s"
       ]
     },
     {
+      "customType": "regex",
       "fileMatch": ["^ansible/(group_vars|host_vars)/.*?$"],
       "matchStrings": [
         "\\s*(.+_image):\\s+\"?'?(?<depName>[^:\\s]+):(?<currentValue>[^\"'@]+?)(@(?<currentDigest>sha256:[a-f0-9]+))?\"?'?\\s"
@@ -54,6 +56,7 @@
       "datasourceTemplate": "docker"
     },
     {
+      "customType": "regex",
       "fileMatch": ["^terraform/.+.tf$", "^.drone.yml$"],
       "matchStrings": [
         "required_version = \"?= (?<currentValue>.*?)\"?\\s",
@@ -61,6 +64,14 @@
       ],
       "depNameTemplate": "hashicorp/terraform",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["^terraform/.+.tf$"],
+      "matchStrings": [
+        "source =\\s+\"?'?.+::(?<depName>[^?&\\s]+).git.+ref=(?<currentValue>[^\"'&?s]+).*\"?'?"
+      ],
+      "datasourceTemplate": "git-tags"
     }
   ]
 }
