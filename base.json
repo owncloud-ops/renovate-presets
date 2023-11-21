@@ -37,6 +37,14 @@
       "matchStrings": [
         "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\\n.*?_VERSION (:|\\?)= (?<currentValue>.*)\\s"
       ]
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)\\.drone\\.star$"],
+      "matchStrings": [
+        ".+(?:_IMAGE)\\s*=\\s*\"?'?(?<depName>[^:\\s]+):(?<currentValue>[^\"'@\\s]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"?'?"
+      ],
+      "datasourceTemplate": "docker"
     }
   ]
 }
